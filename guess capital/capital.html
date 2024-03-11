@@ -3,27 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess Capitale</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="le.js" defer></script>
     <link rel="stylesheet" href="capital.css">
-    <script src="le.js"></script>
+    <title>Guess Capital</title>
 </head>
 <body>
-
-    <div id="quiz-container">
-        <h1>Quizz des capitales</h1>
-        <div id="question-container">
-            <p id="country-name"></p>
-            <img id="country-flag" alt="Country Flag">
-        </div>
-        <div id="answer-container">
-            <label for="capital-input">Capitale:</label>
-            <input type="text" id="capital-input" placeholder="Entrez la capitale">
-            <button>Valider</button>
-        </div>
-        <p id="result"></p>
-        <button>Question Suivante</button>
-        <p id="score">Score: 0</p>
+    <div class="container">
+        <h1>Quelle est la capitale de</h1>
+        <h1 class = "country"></h1>
+        <img src="#" alt="">
+        <input type="text" class ="input-text">
+        <button class = "answerBtn">Confirmer</button>
+        <button class = "rollBtn">Roll</button>
+       
     </div>
-
+    <p class = "answer">Score</p>
 </body>
 </html>

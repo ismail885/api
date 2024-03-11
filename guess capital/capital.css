@@ -1,13 +1,28 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-
-img {
-    max-width: 200px;
-    max-height: 150px;
+ 
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+ 
+.container {
+    width: 60%;
+    height: 60%;
+    background-color: salmon;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+.container * {
+    margin: 8px;
 }
