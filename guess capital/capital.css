@@ -16,7 +16,7 @@ body {
 .container {
     width: 60%;
     height: 60%;
-    background-color: salmon;
+    background-color: rgb(0, 126, 135);
     display: flex;
     align-items:center;
     flex-direction: column;

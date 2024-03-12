@@ -1,4 +1,4 @@
-// TXEEg6Myo5I3jwGey72KePUcQGEUyn8JFyhTstrw
+// 4wgNqzkRoUggrPkY5zJ5nOCnZwmsJheW4hFfcbHS
 
 // Nom de l'api : countryapi.io
 
@@ -14,20 +14,19 @@
 
 // les pays sur lesquels on est questionnée doivent etre généré aléatoirement
 
-c// TXEEg6Myo5I3jwGey72KePUcQGEUyn8JFyhTstrw
 const container = document.querySelector('.container')
 const pays = document.querySelector('.country')
 const img = document.querySelector('img')
 const input = document.querySelector('input')
-const rollBtn = document.querySelector('.rollBtn')
+const lancer = document.querySelector('.next')
 const answerBtn = document.querySelector('.answerBtn')
 const answer = document.querySelector('.answer')
 let score = 0
  
-const key = 'e6XRsAO2xOhGrWBV1uWzqtVPnCJI1DQYzwVin4q9'
+const key = '5nGkIr7s3qUFkdR1WHef5uEM0iM4MDIEQNzboWYx'
  
 function getRandomCountry() {
-    axios.get(`https://countryapi.io/api/all?apikey=${key}`)
+    axios.get ("https://countryapi.io/api/all?apikey=5nGkIr7s3qUFkdR1WHef5uEM0iM4MDIEQNzboWYx")
         .then(response => {
             const countries = response.data;
             const tableau = Object.keys(countries).map(key => countries[key])  
@@ -38,13 +37,9 @@ function getRandomCountry() {
             const countryFlag = arrayCountries.flag.medium
             const capital = arrayCountries.capital
             answer.textContent = ""
- 
            
             console.log(capital)
             console.log(compareResult(capital))
- 
- 
- 
    
             pays.textContent = countryName
             img.src = countryFlag    
@@ -58,7 +53,6 @@ rollBtn.addEventListener('click', getRandomCountry);
  
 document.addEventListener('DOMContentLoaded', getRandomCountry)
  
- 
 function compareResult(capital) {
  
     answerBtn.addEventListener('click', () => {
@@ -69,7 +63,7 @@ function compareResult(capital) {
             score = score +1
            
         } else {
-            console.log('non')
+            console.log('nope')
             answer.textContent = "Mauvaise Réponse"
         }
     })
